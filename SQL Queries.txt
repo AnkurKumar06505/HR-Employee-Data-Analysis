@@ -1,4 +1,4 @@
- What is the gender breakdown of employee in the company ? 
+* What is the gender breakdown of employee in the company ? 
 SELECT gender, COUNT(*) employee_count
 from hr
 where termdate = ''
