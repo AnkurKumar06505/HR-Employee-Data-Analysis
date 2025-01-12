@@ -1,5 +1,4 @@
-
-* What is the gender breakdown of employee in the company ? 
+ What is the gender breakdown of employee in the company ? 
 SELECT gender, COUNT(*) employee_count
 from hr
 where termdate = ''
@@ -76,7 +75,7 @@ where termdate != ''
 group by location_state,location_city
 order by emp_count desc;
 
-* How has the company’s employee count changed over time based on hire and termination dates ?
+* How has the companyâ€™s employee count changed over time based on hire and termination dates ?
 
 SELECT year,
 hires,
