@@ -41,11 +41,10 @@ WHERE termdate <= curdate() AND termdate != '';
 
 --- How does the gender distribution vary across departments and job titles ?
 
-SELECT department,gender,COUNT(*) AS emp_count
-FROM hr
-WHERE termdate = ''
-GROUP BY  department,gender
-ORDER BY department;
+select department, jobtitle, gender, count(*) emp_count
+from hr where termdate != '' 
+group by department, jobtitle, gender
+order by emp_count desc;
 
 
 --- What is the distribution of job titles across the company ? 
